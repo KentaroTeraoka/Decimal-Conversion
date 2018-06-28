@@ -20,6 +20,10 @@ class Calculation
       i+=1
     end
     @menu_num=gets.chomp.to_i
+    if @menu_num!=1&&@menu_num!=2
+      puts "正しいメニューを選択してください"
+      exit
+    end
     puts "----------"
   end
 
